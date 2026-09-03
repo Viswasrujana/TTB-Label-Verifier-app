@@ -128,7 +128,7 @@ async def extract_label_fields(image_bytes: bytes, filename: str) -> dict:
     Send the label image to the AI vision service.
     Returns a dict with the extracted field values.
     """
-    api_key = os.environ.get("OPENAI_API_KEY", "")
+    api_key = os.environ.get("OPENAI_API_KEY", "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")
     if not api_key:
         raise HTTPException(
             status_code=500,
